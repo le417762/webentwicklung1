@@ -7,16 +7,14 @@
 </head>
 <body>
     <header>
-        <nav>
-            <h1>Navigationsliste:</h1>
-            <ul>
-                <li href="Benutzereingabe.html">Zur Benutzereingabe</li>
-                <li href="Abwesenheit_Urlaub.html">Urlaub / Abwesenheit</li>
-                <li href="Berufsschule.html">Berufsschulzeiten</li>
-                <li href="Tätigkeiten.html">Tätigkeit</li>
-                <li href="BerichtsheftMuster.html">Berichtsheftmuster</li>
-            </ul>
-        </nav>
+        <h1>Navigationsliste:</h1>
+            <nav>
+                <a href="Benutzereingabe.html">Zur Benutzereingabe</a>
+                <a href="Abwesenheit_Urlaub.html">Urlaub / Abwesenheit</a>
+                <a href="Berufsschule.html">Berufsschulzeiten</a>
+                <a href="Tätigkeiten.html">Tätigkeit</a>
+                <a href="BerichtsheftMuster.html">Berichtsheftmuster</a>
+            </nav>
     </header>
     <hr/>
     <main>
@@ -32,19 +30,21 @@
                 <input type = "text" id = "aubsildungsberufsbezeichnung" required placeholder="Aubsildungsberufsbezeichnung">
             </div>
             <div>
-                <input type = "text" id = "ausbildungsabteilung"required placeholder="Ausbildungsabteilung">
+                <input type = "text" id = "ausbildungsabteilung" required placeholder="Ausbildungsabteilung">
             </div>
             <div>
-                <input type="date" id="startdatum" required placeholder="Startdatum der Ausbildung">
+                <label for = "startdatum">Startdatum der Ausbildung: </label>
+                <input type="date" id="startdatum" required>
             </div>
             <div>
-                <input type="date" id="enddatum" required placeholder="Enddatum der Ausbildung">
+                <label for = "enddatum">Enddatum der Ausbildung: </label>
+                <input type="date" id="enddatum" required>
             </div>
             <div>
-                <input type = "text" id = "firma"required placeholder="Firma">
+                <input type = "text" id = "firma" required placeholder="Firma">
             </div>
             <div>
-                <input type = "text" id = "ausbilder"required placeholder="Ausbilder">
+                <input type = "text" id = "ausbilder" required placeholder="Ausbilder">
             </div>
     
             <input type="submit">

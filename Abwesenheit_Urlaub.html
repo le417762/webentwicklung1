@@ -3,43 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">       
+    <link rel = "stylesheet" type = "text/css" href = "./style/app.css">
+    <link rel = "stylesheet" type = "text/css" href = "./style/navbar.css">
+    <link rel = "stylesheet" type = "text/css" href = "./style/index.css">
+    <link rel = "stylesheet" type = "text/css" href = "./style/benutzerdaten.css">
+    <title>Urlaub</title>
 </head>
 <body>
     <header>
-        <h1>Navigationsliste:</h1>
-            <nav>
-                <a href="Benutzereingabe.html">Zur Benutzereingabe</a>
-                <a href="Abwesenheit_Urlaub.html">Urlaub / Abwesenheit</a>
-                <a href="Berufsschule.html">Berufsschulzeiten</a>
-                <a href="Tätigkeiten.html">Tätigkeit</a>
-                <a href="BerichtsheftMuster.html">Berichtsheftmuster</a>
-            </nav>
+        <nav class = "navbar-container">
+            <a href="index.html"><img class = "homeicon" src = "./assets/homeicon.png"></a>
+            <a href="Benutzereingabe.html">Nutzer</a>
+            <a href="Abwesenheit_Urlaub.html">Urlaub</a>
+            <a href="Berufsschule.html">Schulzeiten</a>
+            <a href="Tätigkeiten.html">Tätigkeit</a>
+            <a href="BerichtsheftMuster.html">Berichtsheft</a>
+        </nav>
     </header>
-    <main>
-        <h1>Urlaub / Abwesenheit beantragen:</h1>
-        <form action = "" method = "post">
-            <label for="startdatum">Startdatum der Ausbildung:</label>
-            <input type="date" id="startdatum" required>
-            
-            <label for="enddatum">Enddatum der Ausbildung:</label>
-            <input type="date" id="enddatum" required>
-    
-            <label for = "firma">Bezeichnung: </label>
-            <input type = "text" id = "firma" required autocomplete="off"></input>
-    
-            <input type = "submit" value = "Antrag absenden"></input>
-        </form>
-        <h1>Beispiele: </h1>
-        <div>
-            <h3>Urlaub</h3>
-            <p>Von: 23.09.24</p>
-            <p>Bis: 29.09.24</p>
-        </div>
-        <div>
-            <h3>Krankheit</h3>
-            <p>Von: 12.09.24</p>
-            <p>Bis: 20.09.24</p>
+    <main class = "main">
+        <div class = "form-container">
+            <h1 class = "formtitle">Abwesenheit beantragen:</h1>
+            <form class = "form" action = "" method = "post">
+                <div class = "inputwithlabel">
+                    <label class = "datelabel" for="startdatum">Startdatum der Ausbildung:</label>
+                    <input class = "dateinput" type="date" id="startdatum" required>
+                </div>
+                <div class = "inputwithlabel">
+                    <label class = "datelabel" for="enddatum">Enddatum der Ausbildung:</label>
+                    <input class = "dateinput" type="date" id="enddatum" required>
+                </div>
+                <div class = "inputwithlabel">
+                    <label class = "textlabel" for = "firma">Bezeichnung: </label>
+                    <input class = "textinput" type = "text" id = "firma" required autocomplete="off"></input>
+                </div>
+        
+                <input class = "submitbutton" type = "submit" value = "Antrag absenden"></input>
+            </form>
         </div>
     </main>
 </body>

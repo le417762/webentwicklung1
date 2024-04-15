@@ -3,38 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">       
+    <link rel = "stylesheet" type = "text/css" href = "./style/app.css">
+    <link rel = "stylesheet" type = "text/css" href = "./style/navbar.css">
+    <link rel = "stylesheet" type = "text/css" href = "./style/index.css">
+    <link rel = "stylesheet" type = "text/css" href = "./style/benutzerdaten.css">
     <title>Tätigkeiten</title>
 </head>
 <body>
     <header>
-        <h1>Navigationsliste:</h1>
-            <nav>
-                <a href="Benutzereingabe.html">Zur Benutzereingabe</a>
-                <a href="Abwesenheit_Urlaub.html">Urlaub / Abwesenheit</a>
-                <a href="Berufsschule.html">Berufsschulzeiten</a>
-                <a href="Tätigkeiten.html">Tätigkeit</a>
-                <a href="BerichtsheftMuster.html">Berichtsheftmuster</a>
-            </nav>
+        <nav class = "navbar-container">
+            <a href="index.html"><img class = "homeicon" src = "./assets/homeicon.png"></a>
+            <a href="Benutzereingabe.html">Nutzer</a>
+            <a href="Abwesenheit_Urlaub.html">Urlaub</a>
+            <a href="Berufsschule.html">Schulzeiten</a>
+            <a href="Tätigkeiten.html">Tätigkeit</a>
+            <a href="BerichtsheftMuster.html">Berichtsheft</a>
+        </nav>
     </header>
-
-    <main>
-        <h1>Tätigkeit: </h1>
-        <form action = "" method = "post">
-            <textarea type = "text" id = "vorname" required placeholder="Tätigkeit"></textarea>
-    
-            <label for="aktiv">Aktiv oder Inaktiv:</label>
-            <input type="checkbox" id="aktiv" name="aktiv" checked>
-            <label for="aktiv">Aktiv</label>
-    
-            <label for="ranking">Ranking oder Priorität:</label>
-            <input type="number" id="ranking" name="ranking" min="1">
-    
-            <label for="gueltigkeit">Gültigkeit (Startdatum - Enddatum):</label>
-            Startdatum: <input type="date" id="startdatum" name="startdatum"> 
-            Enddatum: <input type="date" id="enddatum" name="enddatum">
-    
-            <input type="submit" value = "Hinzufügen">
-        </form>
+    <main class = "main">
+        <div class = "form-container">
+            <h1 class = "formtitle">Tätigkeit: </h1>
+            <form class = "form" action = "" method = "post">
+                <textarea class = "textinput" type = "text" id = "vorname" required placeholder="Tätigkeit"></textarea>
+                <div class = "inputwithlabel">
+                    <label for="aktiv">Aktiv oder Inaktiv:</label>
+                    <div class = "checkboxwithlabel" >
+                        <label for="aktiv">Aktiv</label>
+                        <input type="checkbox" id="aktiv" name="aktiv" checked>
+                    </div>
+                </div>
+                <div class = "inputwithlabel">
+                    <label for="ranking">Ranking oder Priorität:</label>
+                    <input class = "textinput" type="number" id="ranking" name="ranking" min="1">
+                </div>
+                <div class = "inputwithlabel">
+                    <label for="gueltigkeit">Gültigkeit (Startdatum - Enddatum):</label>
+                    <div class = "inputwithlabel">
+                        <label for = "startdatum">Startdatum:</label>
+                        <input class ="dateinput" type="date" id="startdatum" name="startdatum"> 
+                    </div>
+                    <div class = "inputwithlabel">
+                        <label for = "enddatum">Enddatum:</label>
+                        <input class ="dateinput" type="date" id="enddatum" name="enddatum"> 
+                    </div>
+                </div>
+                <input class = "submitbutton" type="submit" value = "Hinzufügen">
+            </form>
+        </div>
     </main>
 </body>
 </html>

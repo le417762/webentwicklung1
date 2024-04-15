@@ -1,0 +1,52 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+
+    align-items: center;
+
+}
+.navbar-container a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.25s;
+}
+.navbar-container a:hover {
+    color: grey;
+}
+
+.homeicon {
+    height: 25px;
+}
+.homeicon:hover {
+    animation: wiggle 0.5s ease;
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@media (max-width: 1200px) {
+    .navbar-container a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 700px) {
+    .navbar-container {
+        gap: 10px;
+    }
+
+    .navbar-container a {
+        font-size: 10px;
+    }
+    .homeicon {
+        height: 20px;
+    }
+}

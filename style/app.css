@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.textinput {
+    border: 1px solid rgb(215, 215, 215);
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+    width: 500px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.textinput:focus {
+    border: 1px solid #7D91D8;
+}
+
+.textareainput {
+    border: 1px solid rgb(215, 215, 215);
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+    width: 500px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.textareainput:focus {
+    border: 1px solid #7D91D8;
+}
+
+.timeinput {
+    border: 1px solid rgb(215, 215, 215);
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+    outline: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+.timeinput:focus {
+    border: 1px solid #7D91D8;
+}
+
+.submitbutton {
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.25s;
+    margin-top: 20px;
+}
+.submitbutton:hover {
+    background-color: #7D91D8;
+    color: white;
+}
+.submitbutton:active {
+    background-color: #5772d3;
+}
+
+.inputwithlabel {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.checkboxwithlabel {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #676767;
+    margin-left: 5px; 
+}
+.inputwithlabel label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #676767;
+    margin-left: 5px;
+}
+.dateinput {
+    border: 1px solid rgb(215, 215, 215);
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+    outline: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+.dateinput:focus {
+    border: 1px solid #7D91D8;
+}
+
+@media (max-width: 700px) {
+    .form-container {
+        gap: 10px;
+    }
+
+    .form {
+        gap: 10px;
+    }
+
+    .textinput {
+        padding: 5px 10px 5px 10px;
+        font-size: 12px;
+        width: 250px;
+        border-radius: 8px;
+    }
+    
+    .timeinput {
+        padding: 5px 10px 5px 10px;
+        font-size: 12px;
+        width: 250px;
+        border-radius: 8px;
+    }
+
+    .textareainput {
+        padding: 5px 10px 5px 10px;
+        font-size: 12px;
+        width: 250px;
+        border-radius: 8px;
+    }
+
+    .dateinput {
+        padding: 5px 10px 5px 10px;
+        font-size: 12px;
+        width: 250px;
+        border-radius: 8px;
+    }
+
+    .inputwithlabel label {
+        font-size: 12px;
+    }
+
+    .formtitle {
+        font-size: 20px;
+    }
+
+    .submitbutton {
+        padding: 8px 10px 8px 10px;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .label {
+        font-size: 12px;
+    }
+}

@@ -1,83 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Berufschulzeiten</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./style/app.css" />
+    <link rel="stylesheet" type="text/css" href="./style/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="./style/index.css" />
+    <link rel="stylesheet" type="text/css" href="./style/benutzerdaten.css" />
+    <title>Schulzeiten</title>
+  </head>
+  <body>
     <header>
-        <h1>Navigationsliste:</h1>
-            <nav>
-                <a href="Benutzereingabe.html">Zur Benutzereingabe</a>
-                <a href="Abwesenheit_Urlaub.html">Urlaub / Abwesenheit</a>
-                <a href="Berufsschule.html">Berufsschulzeiten</a>
-                <a href="Tätigkeiten.html">Tätigkeit</a>
-                <a href="BerichtsheftMuster.html">Berichtsheftmuster</a>
-            </nav>
+      <nav class="navbar-container">
+        <a href="index.html"
+          ><img class="homeicon" src="./assets/homeicon.png"
+        /></a>
+        <a href="Benutzereingabe.html">Nutzer</a>
+        <a href="Abwesenheit_Urlaub.html">Urlaub</a>
+        <a href="Berufsschule.html">Schulzeiten</a>
+        <a href="Tätigkeiten.html">Tätigkeit</a>
+        <a href="BerichtsheftMuster.html">Berichtsheft</a>
+      </nav>
     </header>
 
-    <main>
-        <h1>Berufschulzeiten</h1>
-        <form>
-            <h3>Neuer Eintrag</h1>
-            <div>
-                <label for="themen">Unterrichtsthemen:</label>
-                <textarea id="themen" name="themen" rows="4" cols="50" required></textarea>
-    
-                <label for="beginn">Beginn:</label>
-                <input type="time" id="beginn" required>
-                
-                <label for="ende">Ende:</label>
-                <input type="time" id="ende" required>
-    
-                <label for = "montag">Montag</label>
-                <input type = "checkbox" id = "montag">
-                <label for = "dienstag">Dienstag</label>
-                <input type = "checkbox" id = "dienstag">
-                <label for = "mittwoch">Mittwoch</label>
-                <input type = "checkbox" id = "mittwoch">
-                <label for = "donnerstag">Donnerstag</label>
-                <input type = "checkbox" id = "donnerstag">
-                <label for = "freitag">Freitag</label>
-                <input type = "checkbox" id = "freitag">
-    
-                <input type = "submit" value = "Hinzufügen">
+    <main class="main">
+      <div class="form-container">
+        <h1 class="formtitle">Neuer Eintrag</h1>
+        <form class="form">
+            <div class = "inputwithlabel">
+                <label class = "textlabel" for="themen">Unterrichtsthemen:</label>
+                <textarea
+                    class = "textareainput"
+                  id="themen"
+                  name="themen"
+                  rows="4"
+                  cols="50"
+                  required
+                ></textarea>
             </div>
+            <div class = "inputwithlabel">
+                <label class = "label" for="beginn">Beginn:</label>
+                <input class = "timeinput" type="time" id="beginn" required />
+            </div>
+            <div class = "inputwithlabel">
+                <label for="ende">Ende:</label>
+                <input class = "timeinput" type="time" id="ende" required />
+            </div>
+            <div class = "checkboxwithlabel">
+                <label class = "label" for="montag">Montag</label>
+                <input type="checkbox" id="montag" />
+            </div>
+            <div class = "checkboxwithlabel">
+                <label class = "label" for="dienstag">Dienstag</label>
+                <input type="checkbox" id="dienstag" />
+            </div>
+            <div class = "checkboxwithlabel">
+                <label class = "label" for="mittwoch">Mittwoch</label>
+                <input type="checkbox" id="mittwoch" />
+            </div>
+            <div class = "checkboxwithlabel">
+                <label class = "label" for="donnerstag">Donnerstag</label>
+                <input type="checkbox" id="donnerstag" />
+            </div>
+            <div class = "checkboxwithlabel">
+                <label class = "label" for="freitag">Freitag</label>
+                <input type="checkbox" id="freitag" />
+            </div>
+          <input class = "submitbutton" type="submit" value="Hinzufügen" />
         </form>
-        <h2>Beispieldatensätze:</h2>
-        <table>
-            <tr>
-                <th>Beginn</th>
-                <th>Ende</th>
-                <th>Unterrichtsthemen</th>
-                <th>Montag</th>
-                <th>Dienstag</th>
-                <th>Mittwoch</th>
-                <th>Donnerstag</th>
-                <th>Freitag</th>
-            </tr>
-            <tr>
-                <td>8:00</td>
-                <td>12:15</td>
-                <td>Thema 1: HTML Basics<br>Thema 2: CSS Einleitung</td>
-                <td>✓</td>
-                <td>✓</td>
-                <td></td>
-                <td>✓</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>14:00</td>
-                <td>18:00</td>
-                <td>Thema 3: JavaScript<br>Thema 4: DOM Manipulation</td>
-                <td>✓</td>
-                <td>✓</td>
-                <td></td>
-                <td>✓</td>
-                <td>✓</td>
-            </tr>
-        </table>
+      </div>
     </main>
-</body>
+  </body>
 </html>

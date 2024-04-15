@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Navigationsliste:</h1>
+            <ul>
+                <a href="Benutzereingabe.html">Zur Benutzereingabe</a>
+                <a href="Abwesenheit_Urlaub.html">Urlaub / Abwesenheit</a>
+                <a href="Berufsschule.html">Berufsschulzeiten</a>
+                <a href="Tätigkeiten.html">Tätigkeit</a>
+                <a href="BerichtsheftMuster.html">Berichtsheftmuster</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Urlaub / Abwesenheit beantragen:</h1>
+        <form action = "" method = "post">
+            <label for="startdatum">Startdatum der Ausbildung:</label>
+            <input type="date" id="startdatum" required>
+            
+            <label for="enddatum">Enddatum der Ausbildung:</label>
+            <input type="date" id="enddatum" required>
+    
+            <label for = "firma">Bezeichnung: </label>
+            <input type = "text" id = "firma" required autocomplete="off"></input>
+    
+            <input type = "submit" value = "Antrag absenden"></input>
+        </form>
+        <h1>Beispiele: </h1>
+        <div>
+            <h3>Urlaub</h3>
+            <p>Von: 23.09.24</p>
+            <p>Bis: 29.09.24</p>
+        </div>
+        <div>
+            <h3>Krankheit</h3>
+            <p>Von: 12.09.24</p>
+            <p>Bis: 20.09.24</p>
+        </div>
+    </main>
+</body>
+</html>

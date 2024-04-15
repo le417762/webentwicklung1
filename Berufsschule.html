@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berufschulzeiten</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Navigationsliste:</h1>
+            <ul>
+                <a href="Benutzereingabe.html">Zur Benutzereingabe</a>
+                <a href="Abwesenheit_Urlaub.html">Urlaub / Abwesenheit</a>
+                <a href="Berufsschule.html">Berufsschulzeiten</a>
+                <a href="Tätigkeiten.html">Tätigkeit</a>
+                <a href="BerichtsheftMuster.html">Berichtsheftmuster</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Berufschulzeiten</h1>
+        <form>
+            <h3>Neuer Eintrag</h1>
+            <div>
+                <label for="themen">Unterrichtsthemen:</label>
+                <textarea id="themen" name="themen" rows="4" cols="50" required></textarea>
+    
+                <label for="beginn">Beginn:</label>
+                <input type="time" id="beginn" required>
+                
+                <label for="ende">Ende:</label>
+                <input type="time" id="ende" required>
+    
+                <label for = "montag">Montag</label>
+                <input type = "checkbox" id = "montag">
+                <label for = "dienstag">Dienstag</label>
+                <input type = "checkbox" id = "dienstag">
+                <label for = "mittwoch">Mittwoch</label>
+                <input type = "checkbox" id = "mittwoch">
+                <label for = "donnerstag">Donnerstag</label>
+                <input type = "checkbox" id = "donnerstag">
+                <label for = "freitag">Freitag</label>
+                <input type = "checkbox" id = "freitag">
+    
+                <input type = "submit" value = "Hinzufügen">
+            </div>
+        </form>
+        <hr>
+        <h2>Beispieldatensätze:</h2>
+        <table border="4">
+            <tr>
+                <th>Beginn</th>
+                <th>Ende</th>
+                <th>Unterrichtsthemen</th>
+                <th>Montag</th>
+                <th>Dienstag</th>
+                <th>Mittwoch</th>
+                <th>Donnerstag</th>
+                <th>Freitag</th>
+            </tr>
+            <tr>
+                <td>8:00</td>
+                <td>12:15</td>
+                <td>Thema 1: HTML Basics<br>Thema 2: CSS Einleitung</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td></td>
+                <td>✓</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>14:00</td>
+                <td>18:00</td>
+                <td>Thema 3: JavaScript<br>Thema 4: DOM Manipulation</td>
+                <td>✓</td>
+                <td>✓</td>
+                <td></td>
+                <td>✓</td>
+                <td>✓</td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tätigkeiten</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Navigationsliste:</h1>
+            <ul>
+                <a href="Benutzereingabe.html">Zur Benutzereingabe</a>
+                <a href="Abwesenheit_Urlaub.html">Urlaub / Abwesenheit</a>
+                <a href="Berufsschule.html">Berufsschulzeiten</a>
+                <a href="Tätigkeiten.html">Tätigkeit</a>
+                <a href="BerichtsheftMuster.html">Berichtsheftmuster</a>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Tätigkeit: </h1>
+        <form action = "" method = "post">
+            <textarea type = "text" id = "vorname" required placeholder="Tätigkeit"></textarea>
+    
+            <label for="aktiv">Aktiv oder Inaktiv:</label>
+            <input type="checkbox" id="aktiv" name="aktiv" checked>
+            <label for="aktiv">Aktiv</label>
+    
+            <label for="ranking">Ranking oder Priorität:</label>
+            <input type="number" id="ranking" name="ranking" min="1">
+    
+            <label for="gueltigkeit">Gültigkeit (Startdatum - Enddatum):</label>
+            Startdatum: <input type="date" id="startdatum" name="startdatum"> 
+            Enddatum: <input type="date" id="enddatum" name="enddatum">
+    
+            <input type="submit" value = "Hinzufügen">
+        </form>
+    </main>
+</body>
+</html>

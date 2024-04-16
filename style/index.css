@@ -19,6 +19,7 @@
 .welcometext-container p {
     font-size: 18px;
     font-weight: 500;
+    color: #52525b;
 }
 
 @keyframes welcomeanimation {

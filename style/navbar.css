@@ -14,7 +14,7 @@
     transition: 0.25s;
 }
 .navbar-container a:hover {
-    color: grey;
+    color: #6e7ebf;
 }
 
 .homeicon {

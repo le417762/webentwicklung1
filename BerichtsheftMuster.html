@@ -6,10 +6,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">       
-    <link rel = "stylesheet" type = "text/css" href = "./style/app.css">
+    <link rel = "stylesheet" type = "text/css" href = "./style/app.css" title = "white">
+    <link rel = "stylesheet" type = "text/css" href = "./style/appAlt.css" title = "dark">
     <link rel = "stylesheet" type = "text/css" href = "./style/navbar.css">
     <link rel = "stylesheet" type = "text/css" href = "./style/index.css">
     <link rel = "stylesheet" type = "text/css" href = "./style/benutzerdaten.css">
+    <link rel = "stylesheet" type = "text/css" href = "./style/berichtsheft.css">
+    <link rel = "stylesheet" type = "text/css" href = "./style/berichtsheftdruck.css">
     <title>Berichtheft</title>
 </head>
 <body>
@@ -24,92 +27,100 @@
         </nav>
     </header>
     <main class = "main">
-        <h1>Name: Max Mustermann</h1>
-        <h1>Ausbildungsabteilung: XY</h1>
-        <table >
-            <tr>
-                <th>Ausbildungsnachweis</th>
-                <th>Nr</th>
-                <th>Ausbildungswoche vom</th>
-                <th>Ausbildungswoche bis</th>
-                <th>Ausbildungsjahr</th>
-            </tr>
-            <tr>
-                <td>
-                    
-                </td>
-                <td>
-                    31
-                </td>
-                <td>
-                    xx.xx.xxxx
-                </td>
-                <td>
-                    xx.xx.xxxx
-                </td>
-                <td>
-                    1.
-                </td>
-            </tr>
-        </table>
-
-        <table>
-            <tr>
-                <th>Betriebliche Tätigkeiten</th>
-            </tr>
-            <tr>
-                <td>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, maiores.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, maiores.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, maiores.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, fuga velit fugiat corporis minima omnis consequuntur aperiam nulla nesciunt! Eum dolor repudiandae minus excepturi, odio esse quis. Accusamus magni fugit laboriosam quia tempora, sit dicta, ducimus eum sequi a, est temporibus iste? Voluptatem delectus eaque quo ex, quod consequatur fugiat?</li>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, maiores.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <th>Unterweisungen, Lehrgespräche, betrieblicher Unterricht, sonstige Schulungen</th>
-            </tr>
-            <tr>
-                <td>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, at! Commodi aliquam tempore vitae debitis eos, odit repellat ratione ipsum.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, autem quisquam nihil voluptate perferendis vel!</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit magni voluptate eveniet eligendi atque. Nulla eius nihil voluptatem accusantium blanditiis explicabo cumque distinctio?</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <th>Berufsschule (Unterrichtsthemen)</th>
-            </tr>
-            <tr>
-                <td>
-                    <h3>IT-Systeme:</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quis.</p>
-                    <h3>Vernetzte-Systeme:</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quis.</p>
-                    <h3>Englisch:</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quis.</p>
-                    <h3>Deutsch:</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quis.</p>
-                </td>
-            </tr>   
-        </table>
-        <table>
-            <tr>
-                <th>Datum: XX.XX.XXXX</th>
-                <th>Datum: XX.XX.XXXX</th>
-                <th>Datum: XX.XX.XXXX</th>
-            </tr>
-            <tr>
-                <td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa impedit possimus sit distinctio fugiat esse quam, quia eveniet, nisi voluptatum blanditiis praesentium illum ullam obcaecati. Vel aperiam natus alias dignissimos.</p></td>
-                <td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa impedit possimus sit distinctio fugiat esse quam, quia eveniet, nisi voluptatum blanditiis praesentium illum ullam obcaecati. Vel aperiam natus alias dignissimos.</p></td>
-                <td><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa impedit possimus sit distinctio fugiat esse quam, quia eveniet, nisi voluptatum blanditiis praesentium illum ullam obcaecati. Vel aperiam natus alias dignissimos.</p></td>
-            </tr>
-            <tr>
-                <th>Auszubildene/-r</th>
-                <th>Ausbiler/-in</th>
-                <th>Gesetzlicher/-in Vertreter/-in</th>
-            </tr>
-        </table>
-
+        <div class = "berichtsheft-container">
+            <div class = "name-container">
+                <h1>Name: Max Mustermann</h1>
+                <h1>Ausbildungsabteilung: XY</h1>
+            </div>
+            <div class = "nachweis-container">
+                <h1>Ausbildungsnachweis</h1>
+                <div class = "nachweis-daten-container">
+                    <div class = "nachweis-data">
+                        <p>38 XX.XX.XXXX</p>
+                        <p>Nr. Ausbildungswoche vom</p>
+                    </div>
+                    <div class = "nachweis-data">
+                        <p>XX.XX.XXXX</p>
+                        <p>bis</p>
+                    </div>
+                    <div class = "nachweis-data">
+                        <p>1</p>
+                        <p>Ausbildungsjahr</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "table">
+                <table class = "table-container" border>
+                    <tr>
+                        <td>
+                            <h2 class = "table-title">Betriebliche Tätigkeiten</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class = "ul-list">
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, maiores.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, maiores.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, maiores.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, fuga velit fugiat corporis minima omnis consequuntur aperiam nulla nesciunt! Eum dolor repudiandae minus excepturi, odio esse quis. Accusamus magni fugit laboriosam quia tempora, sit dicta, ducimus eum sequi a, est temporibus iste? Voluptatem delectus eaque quo ex, quod consequatur fugiat?</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, maiores.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <table class = "table-container" border>
+                    <tr>
+                        <td>
+                            <h2 class = "table-title">Unterweisungen, Lehrgespräche, betrieblicher Unterricht, sonstige Schulungen</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul class = "ul-list">
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, at! Commodi aliquam tempore vitae debitis eos, odit repellat ratione ipsum.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, autem quisquam nihil voluptate perferendis vel!</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit magni voluptate eveniet eligendi atque. Nulla eius nihil voluptatem accusantium blanditiis explicabo cumque distinctio?</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <table class = "table-container" border>
+                    <tr>
+                        <td>
+                            <h2 class = "table-title">Unterrichtsthemen</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class = "table-content">
+                                <h3>IT-Systeme:</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quis.</p>
+                                <h3>Vernetzte-Systeme:</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quis.</p>
+                                <h3>Englisch:</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quis.</p>
+                                <h3>Deutsch:</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quis.</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <p class = "signature-text">Durch die nachfolgenden Unterschriften wird die Richtigkeit und Vollständigkeit der obigen Angaben bestätigt.</p>
+                <table class = "table-container" border>
+                    <tr>
+                        <th>Datum: XX.XX.XXXX</th>
+                        <th>Datum: XX.XX.XXXX</th>
+                        <th>Datum: XX.XX.XXXX</th>
+                    </tr>
+                    <tr class = "signature-boxes">
+                        <td><p></p></td>
+                        <td><p></p></td>
+                        <td><p></p></td>
+                    </tr>
+                    <tr>
+                        <th>Auszubildene/-r</th>
+                        <th>Ausbiler/-in</th>
+                        <th>Gesetzlicher/-in Vertreter/-in</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </main>
 </body>
 </html>

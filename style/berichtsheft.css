@@ -1,0 +1,135 @@
+.berichtsheft-container {
+    display: flex;
+    flex-direction: column;
+    width: 210mm;
+    height: 297mm;
+    gap: 20px;
+    padding: 30px;
+}
+
+.name-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.name-container h1 {
+    font-size: 18px;
+}
+
+.nachweis-container {
+    display: flex;
+    justify-content: space-between;
+}
+.nachweis-container h1 {
+    font-size: 24px;
+}
+.nachweis-daten-container {
+    display: flex;
+    gap: 20px;
+}
+
+.nachweis-data p {
+    font-size: 14px;
+}
+.nachweis-data p:first-child::after {
+    display: block;
+    content: "";
+    height: 2px;
+    background-color: black;
+    width: 100%;
+}
+
+.table-container {
+    border: 1px solid black;
+}
+
+.table-container li {
+    margin-left: 30px;
+}
+
+.table-title {
+    height: 30px;
+
+    font-size: 18px;
+    padding: 5px;
+}
+
+.table-content {
+    margin: 10px;
+}
+
+.table-content h3 {
+    font-size: 16px;
+}
+.table-content p {
+    font-size: 14px;
+}
+
+.signature-text {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 5px 0px 5px 0px;
+}
+
+.signature-boxes {
+    height: 100px;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+}
+
+.ul-list {
+    margin: 30px 0px 30px 0px;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    .name-container h1 {
+        font-size: 14px;
+    }
+    .nachweis-container h1 {
+        font-size: 14px;
+    }
+    .berichtsheft-container {
+        width: 400px;
+    }
+    .nachweis-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .nachweis-data p {
+        font-size: 12px;
+    }
+
+    .table-title {
+        font-size: 14px;
+        height: auto;
+    }
+
+    .table-content h3 {
+        font-size: 12px;
+    }
+    .table-content p {
+        font-size: 12px ;
+    }
+
+    .signature-text {
+        font-size: 12px;
+        font-weight: 500;
+        margin: 5px 0px 5px 0px;
+    } 
+
+    .ul-list {
+        margin: 15px 0px 15px 0px;
+        font-size: 12px;
+    } 
+
+    .signature-boxes {
+        height: 50px;
+        font-size: 12px;
+    } 
+}
